@@ -10,12 +10,12 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"Hello": "World"}
+    return {"Pokedex": "Up"}
 
 
 @app.get("/healthcheck")
 async def healthscheck():
-    return {"message": "Pokedex Up"}
+    return {"API": "Up"}
 
 
 def pokedex_call_by_id(id: int) -> Dict:
